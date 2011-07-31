@@ -97,7 +97,7 @@ end
       end
     end    
     
-     describe "password encryption" do
+    describe "password encryption" do
 
         before(:each) do
           @user = User.create!(@attr)
@@ -137,6 +137,9 @@ end
                 matching_user = User.authenticate(@attr[:email], @attr[:password])
                 matching_user.should == @user
               end
-            end
-          end
         end
+            
+         
+      end
+
+  end
